@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="title" class="card_rounded">
+        <h2>Image Insights</h2>
+    </div>
+
+    <div id="mainDiv">
+        <div class="card_rounded">
+            <p>
+                O Image Insights é uma aplicação desenvolvida para realização de um trabalho universitário da disciplina de Computação Gráfica, do curso de engenharia da computação. O Image Insights foi projetado para carregar imagens em formatos comuns (PNG, JPG, BMP) e oferecer um ambiente de análise e transformação visual. As funcionalidades de processamento incluem a redução dimensional da imagem em escalas predefinidas (75%, 50% e 25%), a conversão de formato para WEBP, a aplicação de espelhamento vertical e a conversão de cores para tons de cinza. Além das operações visuais, o Image Insights realiza uma análise estatística robusta, gerando o Histograma dos canais R, G e B e calculando métricas como valores mínimo, máximo, média, mediana e desvio-padrão para cada canal.
+            </p>
+        </div>
+        
+        <label id="labelInput">
+            <input type="file" id="inputImagem" accept=".png, .jpg, .jpeg, .bmp">
+            Fazer upload de imagem
+            <br>
+            <p><i>Formatos aceitos: .png, .jpg e .bitmap</i></p>
+        </label>
+    </div>
+
+    <div id="resultadoPrincipal"> 
+        <div id="resultado"></div>
+        <div>
+            <div id="titleImagensReduzidas"></div>
+            <div id="imagensReduzidas">
+            </div>
+        </div>
+        <hr id="hrImagensReduzidas" style="display: none;">
+        <div id="divHistograma">
+            <canvas id="chartHistograma"></canvas>
+            <div id="dadosHistograma"></div>
+        </div>
+    </div>
+</body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</html>

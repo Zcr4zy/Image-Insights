@@ -1,0 +1,229 @@
+body{
+    background-color: rgb(24, 33, 54);
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+::-webkit-scrollbar{
+    background-color: transparent !important;
+    
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: gainsboro !important;
+    border-radius: 20px;
+}
+
+.card_rounded{
+    background-color: rgb(44, 48, 55);
+    border-radius: 30px;
+}
+
+.button{
+    width: 70%;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-color: rgb(43, 54, 72);
+    color: white;
+    padding: 5px 20px 5px 20px;
+    font-size: 17px;
+    transition: background-color 0.15s ease-in;
+}
+
+.button:hover{
+    background-color: rgb(112, 120, 133);
+}
+
+/*
+    TITLE DA PÁGINA
+*/
+#title {
+    width: 90%;
+    justify-self: center;
+    text-align: center;
+    font-size: 25px;
+    padding: 25px 0;
+    margin-bottom: 50px;
+
+    background: linear-gradient(135deg, #4F46E5, #6366F1);
+    color: #fff;
+
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title h2 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+/*
+    DIV DE EXPLICAÇÃO E INPUT DE IMAGENS
+*/
+#mainDiv{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+}
+
+#mainDiv .card_rounded{
+    width: 50%;
+    padding: 0px 20px 0px 20px;
+    text-align: justify;
+}
+
+#inputImagem{
+    display: none;
+}
+
+#mainDiv label{
+    border: 2px solid transparent;
+    border-radius: 20px;
+    width: 23%;
+    height: 50px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    transition: background-color 0.15s ease-in;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(43, 54, 72);
+}
+
+#mainDiv label:hover{
+   background-color: rgb(112, 120, 133);
+}
+
+#mainDiv label p{
+    margin: 0;
+    font-size: 12px;
+}
+
+#mainDiv button{
+    border: 2px solid transparent;
+    border-radius: 20px;
+    width: 23%;
+    height: 50px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    transition: background-color 0.15s ease-in;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(43, 54, 72);
+    color: white;
+    font-size: 20px;
+}
+
+#mainDiv button:hover{
+   background-color: rgb(112, 120, 133);
+}
+
+
+
+/*
+    RESULTADO PRINCIPAL
+*/
+#resultadoPrincipal{
+    margin-top: 50px;
+}
+
+#resultado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+hr{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.original_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    gap: 86px;
+}
+
+.info_original_image{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px 10px 20px;
+}
+
+.info_original_image p{
+    margin: 5px;
+    font-size: 16px;
+}
+
+.action_buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/*
+    DIV IMAGENS REDUZIDAS
+*/
+#imagensReduzidas{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 100px;
+}
+
+/*
+    TABLE DE DADOS DOS CANAIS R, G e B
+*/
+.histograma_stats {
+    width: 100%; 
+    border-collapse: collapse;
+    margin-top: 50px;
+    font-family: 'Inter', sans-serif;
+}
+
+.histograma_stats th, .histograma_stats td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #333; 
+}
+
+.histograma_stats thead th {
+    background-color: #1a1a1a; 
+    color: #fff;
+    font-weight: 600;
+}
+
+.histograma_stats tbody tr:nth-child(even) {
+    background-color: #222; 
+}
+
+.histograma_stats tbody tr td:first-child {
+    text-align: left;
+    font-weight: 500;
+}
