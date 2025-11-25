@@ -18,15 +18,15 @@ imagens --- tudo direto do navegador.
 -   **Espelhamento vertical** da imagem
 -   **Conversão para tons de cinza**
 -   **Histograma** dos canais **R, G e B**, incluindo:
-    -   valor mínimo\
-    -   valor máximo\
-    -   média\
-    -   mediana\
+    -   valor mínimo
+    -   valor máximo
+    -   média
+    -   mediana
     -   desvio-padrão
 -   **Análise estrutural** da imagem:
-    -   profundidade de cor\
-    -   número de canais\
-    -   dimensões\
+    -   profundidade de cor
+    -   número de canais
+    -   dimensões
     -   tamanho em memória
 
 ## 🎯 Objetivo
